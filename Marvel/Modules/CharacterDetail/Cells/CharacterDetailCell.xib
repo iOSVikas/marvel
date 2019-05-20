@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CharacterDetailCell" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMC-K0-rhN">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DetailCellPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="JuY-kS-Ea1">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                                <color key="backgroundColor" red="0.4562419041450777" green="0.065677021386052498" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZUr-zH-3bB">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4E-nJ-KwY">
+                                <rect key="frame" x="8" y="124" width="84" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="1iS-4V-hFs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.5884472150259068" green="0.084708265450185907" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZUr-zH-3bB" secondAttribute="bottom" id="7Lz-7A-VIO"/>
+                            <constraint firstItem="JuY-kS-Ea1" firstAttribute="leading" secondItem="WMC-K0-rhN" secondAttribute="leading" id="8dy-2z-TbC"/>
+                            <constraint firstItem="ZUr-zH-3bB" firstAttribute="leading" secondItem="WMC-K0-rhN" secondAttribute="leading" id="H43-sm-rPU"/>
+                            <constraint firstAttribute="trailing" secondItem="JuY-kS-Ea1" secondAttribute="trailing" id="H4x-fe-Ieg"/>
+                            <constraint firstItem="JuY-kS-Ea1" firstAttribute="top" secondItem="WMC-K0-rhN" secondAttribute="top" id="JGo-ri-gjQ"/>
+                            <constraint firstItem="ZUr-zH-3bB" firstAttribute="top" secondItem="WMC-K0-rhN" secondAttribute="top" id="TvG-SR-Hga"/>
+                            <constraint firstItem="R4E-nJ-KwY" firstAttribute="leading" secondItem="WMC-K0-rhN" secondAttribute="leading" constant="8" id="bWs-NO-l7A"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUr-zH-3bB" secondAttribute="trailing" id="fQV-v4-pE4"/>
+                            <constraint firstAttribute="trailing" secondItem="R4E-nJ-KwY" secondAttribute="trailing" constant="8" id="g5y-qr-BBh"/>
+                            <constraint firstAttribute="bottom" secondItem="R4E-nJ-KwY" secondAttribute="bottom" constant="6" id="miv-Yk-IGs"/>
+                            <constraint firstAttribute="bottom" secondItem="JuY-kS-Ea1" secondAttribute="bottom" id="r46-n4-foD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WMC-K0-rhN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EGI-Ho-FaZ"/>
+                <constraint firstItem="WMC-K0-rhN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TRD-FE-7JD"/>
+                <constraint firstAttribute="trailing" secondItem="WMC-K0-rhN" secondAttribute="trailing" id="VhU-5U-Wj0"/>
+                <constraint firstAttribute="bottom" secondItem="WMC-K0-rhN" secondAttribute="bottom" id="hsW-8N-n0b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="103" height="133"/>
+            <connections>
+                <outlet property="containerView" destination="WMC-K0-rhN" id="Ta1-AE-EZV"/>
+                <outlet property="thumbnailImage" destination="JuY-kS-Ea1" id="P5c-Gp-BT1"/>
+                <outlet property="titleLabel" destination="R4E-nJ-KwY" id="tYE-iW-dWD"/>
+            </connections>
+            <point key="canvasLocation" x="-114.49275362318842" y="50.223214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DetailCellPlaceholder" width="189" height="266"/>
+        <image name="gradientImage" width="100" height="100"/>
+    </resources>
+</document>
